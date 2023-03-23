@@ -1,0 +1,178 @@
+body {
+ color: #008080;
+}
+
+#imagem-fundo {
+  background-image: url(logo-colorido.png);
+  background-size:300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh; /* altura igual à altura da janela do navegador */
+}
+
+img{
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  height: auto;
+}
+
+form {
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin: 20px auto;
+	width: 300px;
+  border-radius: 20px;
+}
+
+button{
+  border-radius: 10px
+}
+
+input {
+  border-radius: 10px;
+}
+
+#form-poisson {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 10.33%);
+
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    margin-top: 10px; 
+    grid-row-gap: 0px;
+  }
+  
+#form-poisson label {
+    grid-column: 1;
+    text-align: left;
+  }
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size:110%;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+#footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#rodape{
+  margin-top: 70px;
+}
+#cachorrinho {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-image: url('cachorro.gif');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  animation: dog-animation 205s infinite linear;
+  animation-direction: alternate;
+}
+
+@keyframes dog-animation{
+  0%{
+    left: -200px;
+    transform: scaleX(1);
+  }
+
+  10% {
+    left: 100%;
+    transform: scaleX(1); /* Sem espelhamento */
+  }
+  11% {
+    left: 100%;
+    transform: scaleX(-1); /* Espelhamento */
+  }
+  20%{
+    left: -200px;
+    transform: scaleX(-1); /* Espelhamento */
+  }
+
+  21%{
+    left: -200px;
+    transform: scaleX(1);
+  }
+
+  30% {
+    left: 100%;
+    transform: scaleX(1); /* Sem espelhamento */
+  }
+  31% {
+    left: 100%;
+    transform: scaleX(-1); /* Espelhamento */
+  }
+  40%{
+    left: -200px;
+    transform: scaleX(-1); /* Espelhamento */
+  }
+
+  41%{
+    left: -200px;
+    transform: scaleX(1);
+  }
+
+  50% {
+    left: 100%;
+    transform: scaleX(1); /* Sem espelhamento */
+  }
+  51% {
+    left: 100%;
+    transform: scaleX(-1); /* Espelhamento */
+  }
+  60%{
+    left: -200px;
+    transform: scaleX(-1); /* Espelhamento */
+  }
+
+  61%{
+    left: -200px;
+    transform: scaleX(1);
+  }
+
+  70% {
+    left: 100%;
+    transform: scaleX(1); /* Sem espelhamento */
+  }
+  71% {
+    left: 100%;
+    transform: scaleX(-1); /* Espelhamento */
+  }
+  80%{
+    left: -200px;
+    transform: scaleX(-1); /* Espelhamento */
+  }
+
+  81%{
+    left: -200px;
+    transform: scaleX(1);
+  }
+
+  90% {
+    left: 100%;
+    transform: scaleX(1); /* Sem espelhamento */
+  }
+  91% {
+    left: 100%;
+    transform: scaleX(-1); /* Espelhamento */
+  }
+  100%{
+    left: -200px;
+    transform: scaleX(-1); /* Espelhamento */
+  }
+}
+
+
