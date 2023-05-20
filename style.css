@@ -1,13 +1,34 @@
 body {
  color: #008080;
+ overflow: hidden;
+}
+
+
+.container{
+  display: flex;
+}
+
+#gato, #imagem-fundo {
+  display: inline-block;
+  width: 50%;
+}
+
+#gato{
+  background-image: url('gato.gif');
+  /*background-color: blue;*/
+  background-size:100px;
+  margin-left: 150px;
+  background-repeat: no-repeat;
+  height: 25vh;
+  background-position: center bottom;
 }
 
 #imagem-fundo {
   background-image: url(logo-colorido.png);
-  background-size:300px;
-  background-position: center;
+  background-size:250px;
+  margin-right: 400px;
   background-repeat: no-repeat;
-  height: 40vh; /* altura igual à altura da janela do navegador */
+  height: 25vh; /* altura igual à altura da janela do navegador */
 }
 
 img{
@@ -79,9 +100,11 @@ p {
   background-image: url('cachorro.gif');
   background-size: 50%;
   background-repeat: no-repeat;
-  animation: dog-animation 205s infinite linear;
+  animation: dog-animation 305s infinite linear;
   animation-direction: alternate;
 }
+
+
 
 @keyframes dog-animation{
   0%{
